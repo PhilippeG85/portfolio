@@ -1,0 +1,64 @@
+.aboutMe {
+    margin-top: 150vh;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.img {
+    height: 500px;
+}
+
+.aboutInfo {
+    width: 60%;
+}
+
+
+.contactMeBtn {
+    span {
+        color: #4c4a57;
+        font-size: 16px;
+    }
+        color: black;
+        text-decoration: none;
+        font-size: 16px;
+    &:hover {
+        text-decoration: none;
+    }
+    &:before {
+        top: 9px;
+        height: 3px;
+        opacity: 0.5;
+        left: -5px;
+        right: -5px;
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition-duration: 400ms;
+        background: #FF5851;
+        content: "";
+        position: absolute;
+        transition: transform 400ms cubic-bezier(1, 0, 0, 1) 0ms;
+    }
+    &:hover:before {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+    &:after {
+        transition: transform 400ms cubic-bezier(1, 0, 0, 1) 0ms;
+        position: absolute;
+        content: "";
+        background: #4c4a57;
+        transform: scaleX(1);
+        transform-origin: bottom left;
+        transition-duration: 400ms;
+        top: 20px;
+        right: 0px;
+        left: 0px;
+        height: 2px;
+    }
+    &:hover:after {
+        transform: scaleX(0);
+        transform-origin: bottom right;
+    }
+  }

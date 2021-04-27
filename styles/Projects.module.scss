@@ -1,0 +1,16 @@
+.projects {
+    height: 500px;
+    padding: 0 50px;
+    padding-top: 50px;
+    background-image: url('/wave.svg');
+    h1 {
+        margin-left: 10%;
+    }
+}
+
+.project {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
