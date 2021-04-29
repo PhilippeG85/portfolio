@@ -46,7 +46,7 @@ a {
 @keyframes load {
   0%{opacity: 1}
   75%{opacity: 1; transform: scale3d(0.45, 0.857, 1)}
-  100%{opacity: 0; transform: scale3d(0, 0, 0)}
+  100%{opacity: 0; transform: scale3d(0.45, 0.857, 1)}
 }
 
 @keyframes svg-opacity {
