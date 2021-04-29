@@ -9,7 +9,7 @@ export default function Project(props) {
     const handleClick = () => {
         window.scrollTo(0, 1434)
         const selectClass = document.querySelector(`.${props.class}`)
-        selectClass.style.transform = "translateX(100%)"
+        selectClass.style.left = "100%"
     }
 
     return (

@@ -37,13 +37,13 @@ export default function Projects() {
     const handleClick = (site) => {
         if (site === '3') {
             const troisMats = document.querySelector('.les-trois')
-            troisMats.style.transform = "translateX(0)"
+            troisMats.style.left = "0"
         } else if (site === 'help') {
             const helper = document.querySelector('.helper')
-            helper.style.transform = "translateX(0)"
+            helper.style.left = "0"
         } else if(site === 'portfolio') {
             const portfolio = document.querySelector('.portfolio')
-            portfolio.style.transform = "translateX(0)"
+            portfolio.style.left = "0"
         }
     }
 

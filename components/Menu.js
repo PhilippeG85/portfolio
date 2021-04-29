@@ -61,13 +61,13 @@ export default function Menu({ children }) {
         handleClick()
         if (site === '3') {
             const troisMats = document.querySelector('.les-trois')
-            troisMats.style.transform = "translateX(0)"
+            troisMats.style.left = "0"
         } else if (site === 'help') {
             const helper = document.querySelector('.helper')
-            helper.style.transform = "translateX(0)"
+            helper.style.left = "0"
         } else if(site === 'portfolio') {
             const portfolio = document.querySelector('.portfolio')
-            portfolio.style.transform = "translateX(0)"
+            portfolio.style.left = "0"
         }
     }
 
@@ -75,9 +75,9 @@ export default function Menu({ children }) {
         const troisMats = document.querySelector('.les-trois')
         const helper = document.querySelector('.helper')
         const portfolio = document.querySelector('.portfolio')
-        troisMats.style.transform = "translateX(100%)"
-        helper.style.transform = "translateX(100%)"
-        portfolio.style.transform = "translateX(100%)"
+        troisMats.style.left = "100%"
+        helper.style.left = "100%"
+        portfolio.style.left = "100%"
     }
 
     const displayScroll = () => {
