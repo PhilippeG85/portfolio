@@ -1,0 +1,90 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.formName {
+  width: 400px;
+  margin: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nameInput {
+  width: 48%;
+  height: 50px;
+  padding: 0 12px;
+  // background-color: rgb(255,255,238);
+  border: 1px solid rgb(200,200,200);
+  &:focus {
+    outline: 0;
+  }
+}
+
+.emailInput {
+  width: 48%;
+  height: 50px;
+  padding: 0 12px;
+  // background-color: rgb(255,255,238);
+  border: 1px solid rgb(200,200,200);
+  &:focus {
+    outline: 0;
+  }
+}
+
+.formSubject {
+  width: 100%;
+  margin: 8px;
+  height: 50px;
+  padding: 0 12px;
+  // background-color: rgb(255,255,238);
+  border: 1px solid rgb(200,200,200);
+  &:focus {
+    outline: 0;
+  }
+}
+
+.formMsg {
+  width: 100%;
+  margin: 8px;
+  min-height: 150px;
+  padding: 12px;
+  border: none;
+  // background-color: rgb(255,255,238);
+  max-width: 400px;
+  min-width: 400px;
+  border: 1px solid rgb(200,200,200);
+  &:focus {
+    outline: 0;
+  }
+}
+  
+.formBtn {
+  margin: 8px;
+  font-size: 20px;
+  color: #8F8F89;
+  border: none;
+  padding: 2px 14px;
+  border-radius: 4px;
+  // background-color: rgb(255,255,238);
+  transition: ease .4s;
+  border: 1px solid rgb(200,200,200);
+  &:hover{
+    background-color: #ff5851;
+    color: rgb(80,80,80);
+    text-decoration: none;
+  }
+}
+
+  // .styleInput {
+  //   height: 50px;
+  //   padding: 0 12px;
+  //   background-color: rgb(255,255,238);
+  //   border: 1px solid #FAEDCC;
+  //   &:focus {
+  //     outline: 0;
+  //   }
+  // }

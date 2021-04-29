@@ -1,9 +1,12 @@
 .aboutMe {
+    margin-bottom: 2rem;
     margin-top: 150vh;
     padding: 0 50px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    position: relative;
+    background: rgb(248,248,248);
 }
 
 .img {
@@ -16,6 +19,7 @@
 
 
 .contactMeBtn {
+    cursor: pointer;
     span {
         color: #4c4a57;
         font-size: 16px;

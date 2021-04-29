@@ -1,0 +1,28 @@
+.project {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: calc(100% - 100px);
+    height: calc(100vh - 100px);
+    background-size: cover;
+    background-position: top;
+    margin: 50px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    background-repeat: no-repeat;
+}
+
+.les-trois {
+    transform: translateX(100%);
+    transition: transform ease-in-out 1s;
+}
+.helper {
+    transform: translateX(100%);
+    transition: transform ease-in-out 1s;
+}
+
+.portfolio {
+    transform: translateX(100%);
+    transition: transform ease-in-out 1s;
+}

@@ -1,10 +1,14 @@
 import style from '../styles/AboutMe.module.scss'
+
 export default function AboutMe() {
+    const handleClick = () => {
+        window.scrollTo({top: 1970, left: 0, behavior: "smooth"})
+    }
     return (
-        <div className={style.aboutMe}>
+        <div className={style.aboutMe} id='about'>
             <img src='/parapluie.png' className={style.img} />
             <div className={style.aboutInfo}>
-                <h3 style={{ textAlign: "center" }}>About Me</h3>
+                <h3 style={{ textAlign: "center", color: "#4c4a57" }}>About Me</h3>
                 <p>
                     I am Philippe, Web Developer located in Montreal. I enjoy to design good UI, animation and creative layouts.
                     <br />
@@ -17,8 +21,8 @@ export default function AboutMe() {
                     More oriented in Front-end, I have experience in full-stack development as well. Don't hesitate to reach me, I will be pleased to hear about your project.
                 </p>
                 <div style={{ position: "relative", width: "88px", margin: "0 auto" }}>
-                    <a href="#contact" className={style.contactMeBtn}>
-                    <span>Contact-me</span>
+                    <a onClick={handleClick} className={style.contactMeBtn}>
+                        <span>Contact-me</span>
                     </a>
                 </div>
             </div>

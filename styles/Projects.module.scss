@@ -1,16 +1,51 @@
 .projects {
-    height: 500px;
     padding: 0 50px;
-    padding-top: 50px;
-    background-image: url('/wave.svg');
-    h1 {
-        margin-left: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto 2rem;
+    // margin-bottom: 2rem;
+}
+
+.projectTitle {
+    height: 192px;
+    margin-left: 100px;
+    margin-bottom: 16rem;
+}
+
+.projectLinks {
+    h6 {
+        color: #4c4a57;
     }
+    color: #ff5851;
+    margin-right: 100px;
+    margin-top: 2rem;
 }
 
 .project {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    position: relative;
+    margin: 6px 0;
+    padding-left: 28px;
+    &:hover {
+        cursor: pointer;
+        svg {
+            animation: move-arrow .4s ease-in-out infinite alternate-reverse both;
+        }
+    }
+    svg {
+        position: absolute;
+        width: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0px;
+    }
+    p {
+        margin: 0;
+    }
+}
+
+@keyframes move-arrow {
+    from{left: -6px}
+    to{left: 0px}
 }

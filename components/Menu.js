@@ -20,6 +20,66 @@ export default function Menu({ children }) {
         }
     }
 
+    const handleMenuClick = (to) => {
+        clean()
+        const arraw = document.querySelector('.fa-arrow-down')
+        const menu = document.querySelector('.Menu_projectsList__b9kJV')
+        arraw.style.transform = "rotate(-90deg)"
+        menu.style.height = "0px"
+        if (to === 'home') {
+            window.scrollTo({top: 0, left: 0, behavior: "smooth"})
+            handleClick() 
+        } else if (to === 'about') {
+            window.scrollTo({top: 1022, left: 0, behavior: "smooth"})
+            handleClick() 
+        }else if (to === 'projects') {
+            window.scrollTo({top: 1436, left: 0, behavior: "smooth"})
+            handleClick() 
+        } else if (to === 'contact') {
+            window.scrollTo({top: 1970, left: 0, behavior: "smooth"})
+            handleClick() 
+        }
+    }
+
+    const handleProjectsClick = () => {
+        const arraw = document.querySelector('.fa-arrow-down')
+        const menu = document.querySelector('.Menu_projectsList__b9kJV')
+        if (menu.style.height === '') {
+            arraw.style.transform = "rotate(0deg)"
+            menu.style.height = "150px"
+        } else if (menu.style.height === '0px') {
+            arraw.style.transform = "rotate(0deg)"
+            menu.style.height = "150px"
+        } else {
+            arraw.style.transform = "rotate(-90deg)"
+            menu.style.height = "0px"
+        }
+    }
+
+    const handleSelectedProjectClick = (site) => {
+        clean()
+        handleClick()
+        if (site === '3') {
+            const troisMats = document.querySelector('.les-trois')
+            troisMats.style.transform = "translateX(0)"
+        } else if (site === 'help') {
+            const helper = document.querySelector('.helper')
+            helper.style.transform = "translateX(0)"
+        } else if(site === 'portfolio') {
+            const portfolio = document.querySelector('.portfolio')
+            portfolio.style.transform = "translateX(0)"
+        }
+    }
+
+    const clean = () => {
+        const troisMats = document.querySelector('.les-trois')
+        const helper = document.querySelector('.helper')
+        const portfolio = document.querySelector('.portfolio')
+        troisMats.style.transform = "translateX(100%)"
+        helper.style.transform = "translateX(100%)"
+        portfolio.style.transform = "translateX(100%)"
+    }
+
     const displayScroll = () => {
         const arrow = document.querySelector('.Menu_arrow__34qjX')
         if (window.scrollY > '500') {
@@ -40,6 +100,22 @@ export default function Menu({ children }) {
         <div>
             <header>
                 <div className={style.menuLeft}>
+                    <div className={style.menuContent}>
+                        <h4 onClick={() => handleMenuClick('home')}>Home</h4>
+                        <h4 onClick={() => handleMenuClick('about')}>About-me</h4>
+                        <div className={style.projectsContent}>
+                            <div className={style.menuProjects}>
+                                <h4 onClick={() => handleMenuClick('projects')}>Projects</h4>
+                                <FontAwesomeIcon onClick={handleProjectsClick} icon={['fas', 'arrow-down']} />
+                            </div>
+                            <div className={style.projectsList}>
+                                <h6 onClick={() => handleSelectedProjectClick('3')}>Les Trois Mats</h6>
+                                <h6 onClick={() => handleSelectedProjectClick('help')}>Helper</h6>
+                                <h6 onClick={() => handleSelectedProjectClick('portfolio')}>My Portfolio</h6>
+                            </div>
+                        </div>
+                        <h4 onClick={() => handleMenuClick('contact')}>Contact</h4>
+                    </div>
                     <div className={style.menuBtn} onClick={handleClick}>
                         <img src='/MenuBtn.svg' />
                         <p>Menu</p>

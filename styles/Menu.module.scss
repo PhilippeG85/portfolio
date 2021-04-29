@@ -7,6 +7,9 @@
     background-color: white;
     z-index: 9;
     transition: all ease .4s;
+    padding: 50px;
+    display: flex;
+    align-items: center;
 }
 
 .menuBtn {
@@ -24,7 +27,53 @@
     }
     &:hover {
         cursor: pointer;
-        transform: scale(1.1);
+        transform: scale(1.2);
+    }
+}
+
+.menuContent {
+    display: flex;
+    flex-direction: column;
+    h4 {
+        transition: all ease .4s;
+        &:hover {
+            color: #ff5851;
+            cursor: pointer;
+        }
+    }
+}
+
+.projectsContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.menuProjects {
+    display: flex;
+    align-items: center;
+    svg {
+        transform: rotate(-90deg);
+        height: 22px;
+        margin-left: 6px;
+        padding: 4px;
+        transition: all ease .4s;
+        &:hover {
+            color: #ff5851;
+            cursor: pointer;
+        }
+    }
+}
+
+.projectsList {
+    overflow: hidden;
+    height: 0px;
+    transition: all ease .4s;
+    h6 {
+        transition: all ease .4s;
+        &:hover {
+            color: #ff5851;
+            cursor: pointer;
+        }
     }
 }
 

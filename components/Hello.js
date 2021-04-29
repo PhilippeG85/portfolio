@@ -43,7 +43,7 @@ export default function Hello() {
 
     
     return (
-        <div style={{ transform: `translateY(-${translate}%)`}} className='hello'>
+        <div style={{ transform: `translateY(-${translate}%)`}} className='hello' id='home'>
             <h1 id='hello'><img src='/Hello.svg' /></h1>
             <div className='leftBack' />
             <div className='hello-info'>
