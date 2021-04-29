@@ -5,13 +5,14 @@ import Hello from '../components/Hello'
 import AboutMe from '../components/AboutMe'
 import Projects from '../components/Projects'
 import Contact from '../components/Contact'
+import Svg from '../components/Svg'
 
 export default function Home() {
   return (
     <div>
       <Head>
         <title>Philippe Gonse | Web Developer</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/PG.ico" />
         <meta
           name="description"
           content="Web developer in Montreal, interested in freelance opportunities"
@@ -24,7 +25,9 @@ export default function Home() {
         <meta name="twitter:description" content="Web developer in Montreal, interested in freelance opportunities" />
         <meta name="twitter:creator" content="@Philippe" />
       </Head>
-      <div className='loading' />
+      <div className='loading' >
+        <Svg />
+      </div>
       <Menu>
         <Hello />
         <AboutMe />

@@ -28,11 +28,35 @@ a {
   background-color: #ff5851;
   z-index: 9999;
   transform-origin: 9%;
-  animation: load 3s ease 1s 1 forwards;
+  animation: load 2s ease 1.5s 1 forwards;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#Pg {
+  stroke-dasharray: 86;
+  animation: svg 1s linear .5s 1 forwards;
+}
+
+#home-svg {
+  animation: svg-opacity 2s ease 1.5s 1 forwards;
 }
 
 @keyframes load {
   0%{opacity: 1}
   75%{opacity: 1; transform: scale3d(0.45, 0.857, 1)}
   100%{opacity: 0; transform: scale3d(0, 0, 0)}
+}
+
+@keyframes svg-opacity {
+  0%{opacity: 1}
+  10%{opacity: .2}
+  100%{opacity: 0}
+}
+
+@keyframes svg {
+  0%{stroke-dashoffset: 0}
+  50%{stroke-dashoffset: 86}
+  100%{stroke-dashoffset: 0}
 }
