@@ -87,7 +87,6 @@ export default function Projects() {
                 class='portfolio'  
                 url='portfolio.png'  
                 title='My Portfolio' 
-                subtitle='The appartment for your holidays!'
                 parag={portfolioPar}
                 link='www.philippegonse.com'
             />

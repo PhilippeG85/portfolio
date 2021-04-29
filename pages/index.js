@@ -24,6 +24,7 @@ export default function Home() {
         <meta name="twitter:description" content="Web developer in Montreal, interested in freelance opportunities" />
         <meta name="twitter:creator" content="@Philippe" />
       </Head>
+      <div className='loading' />
       <Menu>
         <Hello />
         <AboutMe />

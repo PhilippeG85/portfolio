@@ -18,3 +18,21 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #ff5851;
+  z-index: 9999;
+  transform-origin: 9%;
+  animation: load 3s ease 1s 1 forwards;
+}
+
+@keyframes load {
+  0%{opacity: 1}
+  75%{opacity: 1; transform: scale3d(0.45, 0.857, 1)}
+  100%{opacity: 0; transform: scale3d(0, 0, 0)}
+}
