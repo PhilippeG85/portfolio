@@ -49,3 +49,15 @@
     from{left: -6px}
     to{left: 0px}
 }
+
+@media (max-width: 540px) {
+    .projectTitle {
+        height: 88px;
+        margin-left: 0px;
+        margin-bottom: 6rem;
+    }
+    .projectLinks {
+        margin-right: 0;
+        width: 38%;
+    }
+}

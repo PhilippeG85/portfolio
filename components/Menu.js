@@ -142,13 +142,16 @@ export default function Menu({ children }) {
                     </ul>
                 </div>
                 <div className={style.name}>
-                    <h3>My Portfolio<span className={style.point}>.</span></h3>
+                    <h3 className='menu-h3'>My Portfolio<span className={style.point}>.</span></h3>
                 </div>
                 <div className={style.footer}>
                     <div className={style.arrow}>
                         <p>Scroll</p>
                         <FontAwesomeIcon icon={['fas', 'long-arrow-alt-down']} />
                     </div>
+                </div>
+                <div className={style.mobileMenu}>
+                    <FontAwesomeIcon icon={['fas', 'bars']} />
                 </div>
             </header>
             {children}

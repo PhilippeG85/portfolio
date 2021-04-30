@@ -19,4 +19,38 @@
 
 .rightContent {
   padding-bottom: 10rem;
+  img {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 860px) {
+  .formLeft {
+    width: 300px;
+  }
+  .styleFormLeft {
+    width: 250px;
+  }
+}
+
+@media (max-width: 540px) {
+  .formLeft {
+    width: 200px;
+    margin-top: 1rem;
+  }
+  .styleFormLeft {
+    width: 200px;
+  }
+  .contactPage {
+    height: 100%;
+    flex-direction: column;
+    padding: 0;
+    margin-top: 5rem;
+  }
+  .rightContent {
+    padding-bottom: 0;
+    img {
+      margin-bottom: 10px;
+    }
+  }
 }

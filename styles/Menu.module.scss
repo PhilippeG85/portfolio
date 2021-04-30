@@ -110,7 +110,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     height: 50px;
     background-color: white;
     padding-left: 50px;
@@ -145,5 +145,34 @@
 
 .point {
     color: #ff5851;
+}
 
+.mobileMenu {
+    display: none;
+    position: fixed;
+    top: 24px;
+    right: 28px;
+    z-index: 999;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: white;
+    align-items: center;
+    justify-content: center;
+    svg {
+        height: 20px;
+    }
+}
+
+@media (max-width: 540px) {
+    .footer, .socialMedia, .menuLeft {
+        display: none;
+    }
+    .name {
+        background-color: transparent;
+        top: 14px;
+    }
+    .mobileMenu {
+        display: flex;
+    }
 }

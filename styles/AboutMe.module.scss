@@ -66,3 +66,18 @@
         transform-origin: bottom right;
     }
   }
+
+  @media (max-width: 540px) {
+      .aboutMe {
+        flex-direction: column-reverse;
+        padding: 0;
+        margin-bottom: 0;
+        margin-top: 150vh;
+      }      
+      .aboutInfo {
+          width: 80%;
+      }
+      .img {
+          height: 400px;
+      }
+  }

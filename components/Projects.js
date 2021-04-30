@@ -8,13 +8,15 @@ library.add(fas)
 
 export default function Projects() {
 
-    const lesTroisPar = (<p>
-                            This website was design and made in one week.
-                            <br />
-                            I used the React framework to build all the pages, google maps api to display the maps and emailjs for the contact form.
-                            <br />
-                            It is deployed using Netlify.
-                        </p>)
+    const lesTroisPar = (
+        <p>
+            This website was design and made in one week.
+            <br />
+            I used the React framework to build all the pages, google maps api to display the maps and emailjs for the contact form.
+            <br />
+            It is deployed using Netlify.
+        </p>
+    )
 
     const portfolioPar = (
         <p>
@@ -24,7 +26,7 @@ export default function Projects() {
             <br />
             It is deployed with Firebase.
         </p>
-        )
+    )
 
     const helperPar = (
         <p>

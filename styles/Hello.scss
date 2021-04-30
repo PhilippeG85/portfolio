@@ -43,3 +43,40 @@
     transition: all ease-in-out 1s;
     opacity: 0;
 }
+
+.menu-h3 {
+    transition: opacity ease 1s;
+}
+
+.arrow {
+    position: absolute;
+    bottom: 26px;
+    right: 50%;
+    display: none;
+    flex-direction: column;
+    transition: all ease .6s;
+    color: white;
+    p {
+        transform: rotateZ(-90deg);
+    }
+    svg {
+        height: 20px;
+    }
+}
+
+
+@media (max-width: 540px) {
+    #hello {
+        padding-left: 2rem;
+        padding-bottom: 10rem;
+        svg {
+            width: 250px;
+        }
+    }
+    .hello-info {
+        top: 72%;
+    }
+    .arrow {
+        display: flex;
+    }
+}
