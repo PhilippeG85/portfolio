@@ -1,0 +1,104 @@
+.open-menu {
+    -webkit-transform-origin-x: 87%;
+    -webkit-transform-origin-y: 24px;
+    animation: open-menu 2s ease-in-out 1 forwards;
+    .mobile-menu-bar {
+        animation: open 2s linear 1 forwards;
+    }
+}
+
+.mobile-menu-bar {
+    height: 90%;
+    width: 60px;
+    background-color: #ff5851;
+    position: absolute;
+    top: 18px;
+    right: 18px;
+}
+
+.close-menu {
+    -webkit-transform-origin-x: 87%;
+    -webkit-transform-origin-y: 24px;
+    animation: close-menu 2s ease-in-out 1 forwards;
+    .mobile-menu-bar {
+        animation: close 2s linear 1 forwards;
+    }
+}
+
+
+@keyframes open {
+    0%{
+        height: 100%;
+        width: 100%;
+        top: 0;
+        right: 0;
+    }
+    50%{
+        height: 100%;
+        width: 100%;
+        top: 0;
+        right: 0;
+    }
+    50%{
+        height: 100%;
+        width: 100%;
+        top: 0;
+        right: 0;
+    }
+    90%{
+        height: 100%;
+        width: 60px;
+        top: 0;
+        right: 18px;
+    }
+    100%{
+        height: 90%;
+        width: 60px;
+        top: 18px;
+        right: 18px;
+    }
+}
+
+@keyframes open-menu {
+    0%{transform: scale(0)}
+    50%{transform: scale(1)}
+    100%{transform: scale(1)}
+}
+
+@keyframes close {
+    0%{
+        height: 90%;
+        width: 60px;
+        top: 18px;
+        right: 18px;
+    }
+    25%{
+        height: 100%;
+        width: 60px;
+        top: 0;
+        right: 18px;
+    }
+    50%{
+        height: 100%;
+        width: 100%;
+        top: 0;
+        right: 0;
+    }
+    99%{
+        height: 100%;
+        width: 100%;
+        top: 0;
+        right: 0;
+    }
+    100%{
+        height: 90%;
+        width: 60px;
+        top: 18px;
+        right: 18px;
+    }
+}
+@keyframes close-menu {
+    0%{transform: scale(1)}
+    50%{transform: scale(1)}
+    100%{transform: scale(0)}
+}

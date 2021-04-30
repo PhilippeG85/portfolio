@@ -77,6 +77,19 @@
     }
 }
 
+.projectsListMobile {
+    overflow: hidden;
+    height: 0px;
+    transition: all ease .4s;
+    h6 {
+        transition: all ease .4s;
+        &:hover {
+            color: #ff5851;
+            cursor: pointer;
+        }
+    }
+}
+
 .socialMedia {
     position: fixed;
     top: 0;
@@ -98,6 +111,27 @@
     }
     svg {
         width: 24px;
+        color: #575757;
+        transition: all ease .4s;
+        &:hover {
+            color: #ff5851;
+        }
+    }
+}
+
+.socialListMobile {
+    padding: 0;
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 10%;
+    a {
+        margin: 4px 0;
+    }
+    svg {
+        width: 26px;
+        height: 26px;
         color: #575757;
         transition: all ease .4s;
         &:hover {
@@ -164,6 +198,27 @@
     }
 }
 
+.mobileDropdown {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    z-index: 998;
+    padding-left: 14%;
+    flex-direction: column;
+    justify-content: center;
+    transform: scale(0);
+}
+
+.titleMobile {
+    position: absolute;
+    top: 14px;
+    left: 50px;
+}
+
 @media (max-width: 540px) {
     .footer, .socialMedia, .menuLeft {
         display: none;
@@ -175,5 +230,15 @@
     }
     .mobileMenu {
         display: flex;
+    }
+    .menuContent {
+        margin-bottom: 8rem;
+    }
+    .menuProjects {
+        svg {
+            &:hover {
+                color: black;
+            }
+        }
     }
 }
