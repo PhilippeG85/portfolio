@@ -171,6 +171,7 @@
     .name {
         background-color: transparent;
         top: 14px;
+        pointer-events: none;
     }
     .mobileMenu {
         display: flex;

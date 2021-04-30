@@ -12,6 +12,19 @@
     background-repeat: no-repeat;
 }
 
+.project-mobile {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    display: none;
+    background-color: white;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 .les-trois {
     left: 100%;
     transition: left ease-in-out 1s;
@@ -24,4 +37,27 @@
 .portfolio {
     left: 100%;
     transition: left ease-in-out 1s;
+}
+
+.les-trois-mobile {
+    left: 100%;
+    transition: left ease-in-out 1s;
+}
+.helper-mobile {
+    left: 100%;
+    transition: left ease-in-out 1s;
+}
+
+.portfolio-mobile {
+    left: 100%;
+    transition: left ease-in-out 1s;
+}
+
+@media (max-width: '540px') {
+    .project-mobile {
+        display: flex;
+    }
+    .project {
+        display: none;
+    }
 }
