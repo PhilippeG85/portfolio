@@ -22,6 +22,7 @@ export default function Menu({ children }) {
 
     const handleMenuClick = (to) => {
         clean()
+        const winHeight = window.innerHeight
         const arraw = document.querySelector('.fa-arrow-down')
         const menu = document.querySelector('.Menu_projectsList__b9kJV')
         arraw.style.transform = "rotate(-90deg)"
@@ -30,13 +31,13 @@ export default function Menu({ children }) {
             window.scrollTo({top: 0, left: 0, behavior: "smooth"})
             handleClick() 
         } else if (to === 'about') {
-            window.scrollTo({top: 1022, left: 0, behavior: "smooth"})
+            window.scrollTo({top: 1.5 * winHeight, left: 0, behavior: "smooth"})
             handleClick() 
         }else if (to === 'projects') {
-            window.scrollTo({top: 1436, left: 0, behavior: "smooth"})
+            window.scrollTo({top: 1.95 * winHeight, left: 0, behavior: "smooth"})
             handleClick() 
         } else if (to === 'contact') {
-            window.scrollTo({top: 1970, left: 0, behavior: "smooth"})
+            window.scrollTo({top: 3 * winHeight, left: 0, behavior: "smooth"})
             handleClick() 
         }
     }
