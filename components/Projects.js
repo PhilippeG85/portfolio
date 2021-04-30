@@ -9,10 +9,11 @@ library.add(fas)
 export default function Projects() {
 
     const handleClick = (site) => {
+        document.body.style.overflow = "hidden"
         if (site === '3') {
             if (window.innerWidth < '540') {
                 const troisMats = document.querySelector('.les-trois-mobile')
-            troisMats.style.left = "0"
+                troisMats.style.left = "0"
             } else {
                 const troisMats = document.querySelector('.les-trois')
                 troisMats.style.left = "0"
@@ -28,7 +29,7 @@ export default function Projects() {
         } else if(site === 'portfolio') {
             if (window.innerWidth < '540') {
                 const portfolio = document.querySelector('.portfolio-mobile')
-            portfolio.style.left = "0"
+                portfolio.style.left = "0"
             } else {
                 const portfolio = document.querySelector('.portfolio')
                 portfolio.style.left = "0"

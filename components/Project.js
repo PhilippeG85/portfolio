@@ -7,12 +7,11 @@ library.add(fas)
 
 export default function Project(props) {
     const handleClick = () => {
+        document.body.style.overflow = ""
         if (window.innerWidth < '540') {
-            window.scrollTo(0, 1660)
             const selectClass = document.querySelector(`.${props.class}-mobile`)
             selectClass.style.left = "100%"
         } else {
-            window.scrollTo(0, 1434)
             const selectClass = document.querySelector(`.${props.class}`)
             selectClass.style.left = "100%"
         }
