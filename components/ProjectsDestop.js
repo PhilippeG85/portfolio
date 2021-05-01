@@ -38,7 +38,7 @@ export default function ProjectsDestop() {
                 title='Les Trois Mats' 
                 subtitle='The appartment for your holidays!'
                 parag={lesTroisPar}
-                link='www.les-trois-mats.com'
+                link='https://www.les-trois-mats.com'
             />
             <Project 
                 class='helper'  
@@ -46,14 +46,14 @@ export default function ProjectsDestop() {
                 title='Helper' 
                 subtitle='Planning renovation has never been so easy!'
                 parag={helperPar}
-                link='helper.solutions'
+                link='https://www.helper.solutions'
             />
             <Project 
                 class='portfolio'  
                 url='portfolio'  
                 title='My Portfolio' 
                 parag={portfolioPar}
-                link='www.philippegonse.com'
+                link='https://www.philippegonse.com'
             />
         </>
     )
